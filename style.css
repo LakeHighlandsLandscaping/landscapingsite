@@ -1288,3 +1288,75 @@ nav a.active{
 color:var(--brand-green);
 }
 
+.menu-toggle{
+    display:none;
+    background:none;
+    border:none;
+    color:white;
+    font-size:32px;
+    cursor:pointer;
+}
+
+
+@media(max-width:700px){
+
+header{
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+
+.site-title{
+    font-size:1.2rem;
+}
+
+
+.logo{
+    height:55px;
+}
+
+
+.menu-toggle{
+    display:block;
+}
+
+
+.nav-menu{
+
+    display:none;
+    position:absolute;
+    top:80px;
+    right:15px;
+
+    background:#181818;
+    border-radius:15px;
+    padding:20px;
+
+    flex-direction:column;
+    gap:20px;
+
+    border:1px solid rgba(255,255,255,.1);
+
+}
+
+
+.nav-menu.show{
+
+    display:flex;
+
+}
+
+
+.nav-menu a{
+
+    margin:0;
+    font-size:16px;
+
+}
+
+}
+
+.hero{
+    padding-top:140px;
+}
+
