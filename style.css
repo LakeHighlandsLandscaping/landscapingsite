@@ -1385,3 +1385,34 @@ nav{
 
 }
 
+@media (min-width:701px){
+
+header{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.site-title{
+    display:flex;
+    margin-left:15px;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    margin-left:auto;
+}
+
+nav a{
+    display:block;
+}
+
+.menu-toggle{
+    display:none;
+}
+
+}
+
