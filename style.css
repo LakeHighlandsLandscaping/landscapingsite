@@ -1303,21 +1303,31 @@ color:var(--brand-green);
 header{
     flex-direction:row;
     justify-content:space-between;
+    align-items:center;
+    padding:10px 15px;
+    width:100%;
+    box-sizing:border-box;
 }
-
-
-.site-title{
-    font-size:1.2rem;
-}
-
 
 .logo{
-    height:55px;
+    height:45px;
 }
 
+.site-title{
+    font-size:1rem;
+    flex:1;
+    justify-content:center;
+    text-align:center;
+    margin:0 10px;
+}
 
 .menu-toggle{
     display:block;
+    flex-shrink:0;
+    font-size:28px;
+    padding:5px;
+}
+
 }
 
 
@@ -1359,3 +1369,9 @@ header{
 .hero{
     padding-top:140px;
 }
+
+html, body{
+    max-width:100%;
+    overflow-x:hidden;
+}
+
