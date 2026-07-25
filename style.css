@@ -1143,11 +1143,11 @@ padding:15px;
   padding: 10px 20px;
 }
 
+
 .logo {
-  height: 120px;   /* adjust size */
+  height: 70px;
   width: auto;
 }
-
 
 
 nav a {
@@ -1197,4 +1197,74 @@ nav a {
     color: #4CAF50; /* Replace with your logo's exact green */
 }
 
+
+@media (max-width: 700px){
+
+header{
+    padding:10px 15px;
+}
+
+.logo{
+    height:60px;
+}
+
+.site-title{
+    font-size:1.3rem;
+    text-align:center;
+}
+
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+    margin:0;
+}
+
+nav a{
+    font-size:.9rem;
+    margin:0;
+}
+
+.quote-btn{
+    padding:10px 18px;
+}
+
+}
+
+@media(max-width:700px){
+
+.section-title{
+    font-size:38px;
+}
+
+.section-title::after{
+    width:120px;
+}
+
+}
+
+input,
+textarea,
+select,
+button{
+    box-sizing:border-box;
+    max-width:100%;
+}
+
+@media(max-width:700px){
+
+.gallery img{
+    height:220px;
+}
+
+}
+
+@media(max-width:700px){
+
+.gallery img{
+    height:220px;
+}
+
+}
 
