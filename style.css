@@ -1439,10 +1439,13 @@ nav a{
 
 }
 
+
+
+@media(max-width:700px){
+
 .contact-grid a{
-    display:inline-block;
-    max-width:100%;
-    overflow-wrap:anywhere;
-    word-break:break-word;
+    white-space:nowrap;
+    font-size:14px;
 }
 
+}
