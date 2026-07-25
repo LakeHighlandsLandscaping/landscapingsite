@@ -1389,3 +1389,84 @@ nav a{
 
 }
 
+@media(max-width:700px){
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    box-sizing:border-box;
+}
+
+.site-title{
+    display:none;
+}
+
+.logo{
+    height:55px;
+}
+
+.menu-toggle{
+    display:block;
+}
+
+
+/* dropdown menu */
+.nav-menu{
+
+    display:none;
+    position:absolute;
+
+    top:75px;
+    right:15px;
+
+    flex-direction:column;
+    align-items:stretch;
+
+    background:#181818;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    gap:15px;
+
+    width:180px;
+
+}
+
+
+.nav-menu.show{
+
+    display:flex;
+
+}
+
+
+.nav-menu a{
+
+    margin:0;
+    text-align:center;
+
+}
+
+
+.quote-btn{
+
+    margin-top:5px;
+
+}
+
+
+/* move hero below fixed header */
+
+.hero{
+
+    padding-top:160px;
+
+}
+
+}
+
