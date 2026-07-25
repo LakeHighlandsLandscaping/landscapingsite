@@ -1276,13 +1276,9 @@ button{
 
 }
 
-body{
-    padding-top:100px;
-}
-
-av a:active{
+nav a:active{
 color:var(--brand-green);
-}n
+}
 
 nav a.active{
 color:var(--brand-green);
@@ -1300,36 +1296,13 @@ color:var(--brand-green);
 
 
 .nav-menu{
-
-    display:none;
-    position:absolute;
-    top:80px;
-    right:15px;
-
-    background:#181818;
-    border-radius:15px;
-    padding:20px;
-
-    flex-direction:column;
-    gap:20px;
-
-    border:1px solid rgba(255,255,255,.1);
-
-}
-
-
-.nav-menu.show{
-
     display:flex;
-
+    align-items:center;
+    gap:25px;
 }
-
 
 .nav-menu a{
-
     margin:0;
-    font-size:16px;
-
 }
 
 
