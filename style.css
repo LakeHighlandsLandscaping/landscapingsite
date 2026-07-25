@@ -1351,7 +1351,13 @@ header{
 
 .menu-toggle{
     display:none;
+    background:none;
+    border:none;
+    color:white;
+    font-size:32px;
+    cursor:pointer;
 }
+  
 
 
 @media(max-width:700px){
@@ -1434,6 +1440,9 @@ nav a{
 }
 
 .contact-grid a{
+    display:inline-block;
+    max-width:100%;
     overflow-wrap:anywhere;
+    word-break:break-word;
 }
 
