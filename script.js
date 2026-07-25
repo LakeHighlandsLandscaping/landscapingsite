@@ -74,4 +74,3 @@ menuToggle.addEventListener("click", () => {
 });
 
 }
-
