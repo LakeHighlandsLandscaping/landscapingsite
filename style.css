@@ -1268,3 +1268,23 @@ button{
 
 }
 
+@media(max-width:700px){
+
+.hero{
+    padding-top:120px;
+}
+
+}
+
+body{
+    padding-top:100px;
+}
+
+av a:active{
+color:var(--brand-green);
+}n
+
+nav a.active{
+color:var(--brand-green);
+}
+
