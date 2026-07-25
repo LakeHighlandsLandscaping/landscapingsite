@@ -1432,3 +1432,8 @@ nav a{
     }
 
 }
+
+.contact-grid a{
+    overflow-wrap:anywhere;
+}
+
