@@ -1226,7 +1226,7 @@ header{
 }
 
 .logo{
-    height:80px;
+    height:100px; /* Was 60px */
 }
 
 .site-title{
@@ -1338,7 +1338,7 @@ color:var(--brand-green);
 }
 
 .logo{
-    height:70px;
+    height:80px; /* Was 55px */
 }
 
 header{
