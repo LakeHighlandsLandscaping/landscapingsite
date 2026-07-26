@@ -1219,14 +1219,14 @@ nav a {
 }
 
 
-@media (max-width: 700px){
+@media (max-width: 900px){
 
 header{
     padding:10px 15px;
 }
 
 .logo{
-    height:60px; /* Was 60px */
+    height:75px; /* Was 60px */
 }
 
 .site-title{
@@ -1338,7 +1338,7 @@ color:var(--brand-green);
 }
 
 .logo{
-    height:55px; /* Was 55px */
+    height:75px; /* Was 55px */
 }
 
 header{
