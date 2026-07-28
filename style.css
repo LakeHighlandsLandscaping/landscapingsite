@@ -1497,3 +1497,26 @@ footer a:hover{
     text-decoration:underline;
 }
 
+.back-home{
+    display:inline-block;
+    margin-top:35px;
+    padding:12px 24px;
+    background:#67c56d;
+    color:white !important;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.back-home:hover{
+    color:white !important;
+    text-decoration:none;
+}
+
+@media(max-width:700px){
+    .container{
+        margin:120px 20px 40px;
+        padding:25px;
+    }
+}
+
