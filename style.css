@@ -1476,3 +1476,24 @@ section{
 .checkbox-group a:hover{
     text-decoration:underline;
 }
+
+.privacy-container{
+    padding-top:140px;
+}
+
+@media(max-width:900px){
+    .privacy-container{
+        padding-top:120px;
+    }
+}
+
+footer a{
+    color:#67c56d;
+    text-decoration:none;
+}
+
+footer a:hover{
+    color:#67c56d;
+    text-decoration:underline;
+}
+
