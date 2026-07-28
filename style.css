@@ -1454,3 +1454,26 @@ section{
     scroll-margin-top:120px;
 }
 
+.checkbox-group{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    margin-top:18px;
+    margin-bottom:20px;
+    font-size:.95rem;
+}
+
+.checkbox-group input{
+    margin-top:4px;
+}
+
+.checkbox-group a{
+    color:#67c56d;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.checkbox-group a:hover{
+    text-decoration:underline;
+}
+
