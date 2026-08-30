@@ -1575,7 +1575,7 @@ footer a:hover{
     .hero {
         height: auto;
         min-height: 90vh;
-        padding: 200px 8% 80px;
+        padding: 150px 8% 80px;
         box-sizing: border-box;
         align-items: flex-start;
     }
