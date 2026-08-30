@@ -101,18 +101,43 @@ document.querySelectorAll(".nav-menu a").forEach(link => {
 
 });
 
-const quoteForm = document.querySelector(".quote-form");
+const serviceSelect = document.getElementById("serviceSelect");
+const serviceSelectBox = document.getElementById("serviceSelectBox");
+const selectedServicesText = document.getElementById("selectedServicesText");
 
-if (quoteForm) {
-    quoteForm.addEventListener("submit", function (event) {
-        const selectedServices = quoteForm.querySelectorAll(
-            'input[name="services[]"]:checked'
-        );
+if (serviceSelect) {
 
-        if (selectedServices.length === 0) {
-            event.preventDefault();
-            alert("Please select at least one service.");
+    serviceSelectBox.addEventListener("click", function () {
+        serviceSelect.classList.toggle("open");
+    });
+
+    const serviceCheckboxes = serviceSelect.querySelectorAll(
+        'input[name="services[]"]'
+    );
+
+    serviceCheckboxes.forEach(function (checkbox) {
+
+        checkbox.addEventListener("change", function () {
+
+            const selected = Array.from(serviceCheckboxes)
+                .filter(cb => cb.checked)
+                .map(cb => cb.value);
+
+            if (selected.length === 0) {
+                selectedServicesText.textContent = "Select Services";
+            } else {
+                selectedServicesText.textContent = selected.join(", ");
+            }
+
+        });
+
+    });
+
+    document.addEventListener("click", function (event) {
+
+        if (!serviceSelect.contains(event.target)) {
+            serviceSelect.classList.remove("open");
         }
+
     });
 }
-

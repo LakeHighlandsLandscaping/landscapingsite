@@ -1510,3 +1510,57 @@ footer a:hover{
     }
 }
 
+.custom-select {
+    position: relative;
+    width: 100%;
+}
+
+.select-box {
+    width: 100%;
+    padding: 15px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.arrow {
+    font-size: 18px;
+}
+
+.select-options {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 5px;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.custom-select.open .select-options {
+    display: block;
+}
+
+.select-options label {
+    display: block;
+    padding: 12px 15px;
+    cursor: pointer;
+}
+
+.select-options label:hover {
+    background: #f2f2f2;
+}
+
+.select-options input {
+    margin-right: 10px;
+}
+

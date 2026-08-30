@@ -543,20 +543,77 @@ Tell us about your project and we’ll get back to you.
 
 <input type="text" name="address" placeholder="Property Address" required>
 
-<select name="services[]" multiple required>
-    <option value="Weekly Lawn Care">Weekly Lawn Care</option>
-    <option value="Sod & Grass">Sod & Grass</option>
-    <option value="Mulch, Gravel, & Rock">Mulch, Gravel, & Rock</option>
-    <option value="Flower Beds">Flower Beds</option>
-    <option value="Pressure Washing">Pressure Washing</option>
-    <option value="Fence Staining">Fence Staining</option>
-    <option value="Window Cleaning">Window Cleaning</option>
-    <option value="Gutter Debris Removal">Gutter Debris Removal</option>
-    <option value="Grass Fertilization">Grass Fertilization</option>
-    <option value="Leaf Raking & Yard Cleanup">Leaf Raking & Yard Cleanup</option>
-    <option value="Brick Work & Pave Stones">Brick Work & Pave Stones</option>
-    <option value="Other">Other</option>
-</select>
+<div class="custom-select" id="serviceSelect">
+
+    <div class="select-box" id="serviceSelectBox">
+        <span id="selectedServicesText">Select Services</span>
+        <span class="arrow">▾</span>
+    </div>
+
+    <div class="select-options">
+
+        <label>
+            <input type="checkbox" name="services[]" value="Weekly Lawn Care">
+            Weekly Lawn Care
+        </label>
+
+        <label>
+            <input type="checkbox" name="services[]" value="Sod & Grass">
+            Sod & Grass
+        </label>
+
+        <label>
+            <input type="checkbox" name="services[]" value="Mulch, Gravel, & Rock">
+            Mulch, Gravel, & Rock
+        </label>
+
+        <label>
+            <input type="checkbox" name="services[]" value="Flower Beds">
+            Flower Beds
+        </label>
+
+        <label>
+            <input type="checkbox" name="services[]" value="Pressure Washing">
+            Pressure Washing
+        </label>
+
+        <label>
+            <input type="checkbox" name="services[]" value="Fence Staining">
+            Fence Staining
+        </label>
+
+        <label>
+            <input type="checkbox" name="services[]" value="Window Cleaning">
+            Window Cleaning
+        </label>
+
+        <label>
+            <input type="checkbox" name="services[]" value="Gutter Debris Removal">
+            Gutter Debris Removal
+        </label>
+
+        <label>
+            <input type="checkbox" name="services[]" value="Grass Fertilization">
+            Grass Fertilization
+        </label>
+
+        <label>
+            <input type="checkbox" name="services[]" value="Leaf Raking & Yard Cleanup">
+            Leaf Raking & Yard Cleanup
+        </label>
+
+        <label>
+            <input type="checkbox" name="services[]" value="Brick Work & Pave Stones">
+            Brick Work & Pave Stones
+        </label>
+
+        <label>
+            <input type="checkbox" name="services[]" value="Other">
+            Other
+        </label>
+
+    </div>
+</div>
 
 <select name="contact" required>
 
