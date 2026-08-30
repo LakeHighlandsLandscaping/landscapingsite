@@ -141,3 +141,22 @@ if (serviceSelect) {
 
     });
 }
+
+const quoteForm = document.querySelector(".quote-form");
+
+if (quoteForm) {
+
+    quoteForm.addEventListener("submit", function(event) {
+
+        const selectedServices = document.querySelectorAll(
+            '#serviceSelect input[name="services[]"]:checked'
+        );
+
+        if (selectedServices.length === 0) {
+            event.preventDefault();
+            alert("Please select at least one service.");
+        }
+
+    });
+
+}

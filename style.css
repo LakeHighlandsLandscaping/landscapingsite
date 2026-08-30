@@ -1510,17 +1510,20 @@ footer a:hover{
     }
 }
 
+
 .custom-select {
     position: relative;
     width: 100%;
 }
 
 .select-box {
-    width: 100%;
+    background: #181818;
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 10px;
     padding: 15px;
-    background: white;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
@@ -1528,18 +1531,15 @@ footer a:hover{
     box-sizing: border-box;
 }
 
-.arrow {
-    font-size: 18px;
-}
-
 .select-options {
     display: none;
     position: absolute;
+    left: 0;
+    top: calc(100% + 5px);
     width: 100%;
-    background: white;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    margin-top: 5px;
+    background: #181818;
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 10px;
     max-height: 300px;
     overflow-y: auto;
     z-index: 1000;
@@ -1553,24 +1553,14 @@ footer a:hover{
 .select-options label {
     display: block;
     padding: 12px 15px;
+    color: white;
     cursor: pointer;
 }
 
 .select-options label:hover {
-    background: #f2f2f2;
+    background: #222;
 }
 
 .select-options input {
     margin-right: 10px;
 }
-
-.quote-form select[name="service"] {
-    background-color: #000;
-    color: #fff;
-}
-
-.quote-form select[name="service"] option {
-    background-color: #000;
-    color: #fff;
-}
-
