@@ -1566,21 +1566,17 @@ footer a:hover{
     }
 }
 
-@media (max-width: 900px) {
-    .hero {
-        padding-top: 200px;
-    }
-
     .main-btn {
         position: relative;
         z-index: 10;
     }
-}
 
-@media (max-width: 900px) {
+ @media (max-width: 900px) {
     .hero {
+        height: auto;
+        min-height: 90vh;
+        padding: 200px 8% 80px;
+        box-sizing: border-box;
         align-items: flex-start;
-        padding-top: 180px;
     }
 }
-
