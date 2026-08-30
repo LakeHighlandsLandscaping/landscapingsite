@@ -101,3 +101,18 @@ document.querySelectorAll(".nav-menu a").forEach(link => {
 
 });
 
+const quoteForm = document.querySelector(".quote-form");
+
+if (quoteForm) {
+    quoteForm.addEventListener("submit", function (event) {
+        const selectedServices = quoteForm.querySelectorAll(
+            'input[name="services[]"]:checked'
+        );
+
+        if (selectedServices.length === 0) {
+            event.preventDefault();
+            alert("Please select at least one service.");
+        }
+    });
+}
+
