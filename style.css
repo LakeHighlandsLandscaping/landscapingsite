@@ -1580,3 +1580,30 @@ footer a:hover{
         align-items: flex-start;
     }
 }
+
+
+.reviews {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+}
+
+.reviews h1 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.google-reviews-btn {
+    display: inline-block;
+    margin-top: 20px;
+    color: #67c56d;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.google-reviews-btn:hover {
+    color: #67c56d;
+    text-decoration: underline;
+}
