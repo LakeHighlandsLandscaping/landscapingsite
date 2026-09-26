@@ -132,8 +132,7 @@ cursor:pointer;
 }
 
 .quote-btn:hover,
-.main-btn:hover,
-button:hover{
+.main-btn:hover{
 
 background:#57c466;
 
@@ -1607,3 +1606,433 @@ footer a:hover{
     color: #67c56d;
     text-decoration: underline;
 }
+
+.accordion-btn{
+    display:block;
+    text-decoration:none;
+    box-sizing:border-box;
+}
+
+
+
+
+/* ---------- Lawn Care Hero ---------- */
+
+.lawncare-hero {
+    position: relative;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url("images/yardafwide.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    text-align: center;
+
+    margin: 0;
+    padding: 180px 8% 80px;
+
+    box-sizing: border-box;
+}
+
+
+.lawncare-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,.55);
+
+    z-index: 1;
+}
+
+
+.lawncare-hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 850px;
+}
+
+
+.lawncare-label {
+    color: #67c56d;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+
+.lawncare-hero h1 {
+    font-size: 64px;
+    line-height: 1.15;
+
+    margin: 0 0 25px;
+
+    color: white;
+}
+
+
+.lawncare-hero p:not(.lawncare-label) {
+    color: #eee;
+
+    font-size: 20px;
+    line-height: 1.7;
+
+    max-width: 700px;
+
+    margin: 0 auto 30px;
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:900px) {
+
+    .lawncare-hero {
+        min-height: 80vh;
+
+        padding: 120px 25px 80px;
+
+        background-position: center;
+    }
+
+    .lawncare-hero h1 {
+        font-size: 42px;
+    }
+
+    .lawncare-hero p:not(.lawncare-label) {
+        font-size: 17px;
+    }
+
+}
+
+/* ---------- Lawn Care Included Section ---------- */
+
+.lawncare-included{
+
+    padding:100px 8%;
+
+    text-align:center;
+
+    background:#0f0f0f;
+
+}
+
+
+.lawncare-section-intro{
+
+    max-width:700px;
+
+    margin:-20px auto 50px;
+
+    color:#ccc;
+
+    font-size:18px;
+
+    line-height:1.7;
+
+}
+
+
+.lawncare-services{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+
+.lawncare-card{
+
+    background:#181818;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    padding:35px 25px;
+
+    transition:.3s;
+
+}
+
+
+.lawncare-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+
+}
+
+
+.lawncare-card-icon{
+
+    font-size:40px;
+
+    margin-bottom:15px;
+
+}
+
+
+.lawncare-card h3{
+
+    color:#67c56d;
+
+    font-size:22px;
+
+    margin:10px 0 15px;
+
+}
+
+
+.lawncare-card p{
+
+    color:#ccc;
+
+    font-size:16px;
+
+    line-height:1.7;
+
+    margin:0;
+
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:900px){
+
+    .lawncare-services{
+
+        grid-template-columns:1fr;
+
+        max-width:500px;
+
+    }
+
+    .lawncare-included{
+
+        padding:80px 20px;
+
+    }
+
+}
+
+.lawncare-price{
+    color:#67c56d;
+    font-size:18px;
+    font-weight:500;
+    margin:-10px 0 25px;
+}
+
+.lawncare-price strong{
+    font-weight:700;
+}
+
+.scroll-down {
+    position:absolute;
+    left:50%;
+    bottom:75px;
+
+    transform:translateX(-50%);
+
+    color:#67c56d;
+    font-size:75px;
+    text-decoration:none;
+
+    z-index:10;
+
+    animation:bounce 1.8s infinite;
+}
+
+@keyframes bounce {
+
+    0%, 20%, 50%, 80%, 100% {
+        transform:translateX(-50%) translateY(0);
+    }
+
+    40% {
+        transform:translateX(-50%) translateY(-10px);
+    }
+
+    60% {
+        transform:translateX(-50%) translateY(-5px);
+    }
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ---------- Lawn Care Work ---------- */
+
+.lawncare-work-grid {
+    max-width:900px;
+    margin:0 auto 40px;
+
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:30px;
+    justify-content:center;
+}
+
+.lawncare-work-grid img {
+    width:100%;
+    height:350px;
+
+    object-fit:cover;
+
+    border-radius:16px;
+
+    display:block;
+}
+
+
+@media(max-width:900px) {
+
+    .lawncare-work {
+        padding:80px 20px;
+    }
+
+    .lawncare-work-grid {
+        grid-template-columns:1fr;
+        max-width:500px;
+    }
+
+    .lawncare-work-grid img {
+        height:auto;
+    }
+
+}
+
+.lawncare-work {
+    padding:100px 8%;
+    text-align:center;
+    background:#111;
+}
+
+/* ---------- Lawn Care Service Areas ---------- */
+
+.lawncare-areas {
+    padding:100px 8%;
+    text-align:center;
+    background:#0f0f0f;
+}
+
+.lawncare-area-list {
+    max-width:900px;
+    margin:40px auto 0;
+
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.lawncare-area-list span {
+    background:#181818;
+    border:1px solid rgba(103,197,109,.3);
+    border-radius:999px;
+    padding:12px 22px;
+    color:#67c56d;
+    font-size:16px;
+}
+
+/* ---------- Lawn Care FAQ ---------- */
+
+.lawncare-faq {
+    padding:100px 8%;
+    background:#111;
+}
+
+.faq-list {
+    max-width:900px;
+    margin:auto;
+}
+
+.faq-item {
+    background:#181818;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:14px;
+
+    margin-bottom:15px;
+
+    overflow:hidden;
+}
+
+.faq-question {
+    width:100%;
+
+    padding:24px 25px;
+
+    background:none;
+    border:none;
+
+    color:white;
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:18px;
+    font-weight:600;
+
+    text-align:left;
+
+    cursor:pointer;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.faq-question span {
+    color:#67c56d;
+    font-size:28px;
+    font-weight:400;
+
+    transition:.3s;
+}
+
+.faq-answer {
+    max-height:0;
+
+    overflow:hidden;
+
+    transition:max-height .4s ease;
+}
+
+.faq-answer p {
+    padding:0 25px 25px;
+
+    margin:0;
+
+    color:#ccc;
+
+    font-size:16px;
+    line-height:1.7;
+}
+
+.faq-item:hover {
+    transform: translateY(-4px);
+    border-color: rgba(103,197,109,.25);
+    box-shadow: 0 10px 25px rgba(0,0,0,.25);
+}
+

@@ -161,4 +161,45 @@ if (quoteForm) {
 
 }
 
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+
+    link.addEventListener('click', function(e) {
+
+        const target = document.querySelector(this.getAttribute('href'));
+
+        if (target) {
+            e.preventDefault();
+
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+
+    });
+
+});
+
+document.querySelectorAll('.faq-question').forEach(button => {
+
+    button.addEventListener('click', () => {
+
+        const answer = button.nextElementSibling;
+        const icon = button.querySelector('span');
+
+        if (answer.style.maxHeight) {
+
+            answer.style.maxHeight = null;
+            icon.textContent = '+';
+
+        } else {
+
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+            icon.textContent = '−';
+
+        }
+
+    });
+
+});
 
