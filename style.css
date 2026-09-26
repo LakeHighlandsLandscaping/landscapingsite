@@ -2045,3 +2045,11 @@ html {
 
 }
 
+@media(max-width:900px){
+
+    .lawncare-hero .scroll-down {
+        bottom:10px;
+    }
+
+}
+
