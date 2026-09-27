@@ -2053,3 +2053,1956 @@ html {
 
 }
 
+/* ---------- Mulch, Gravel & Rock Hero ---------- */
+
+.material-hero {
+    position: relative;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url("images/mulch-gravel-rock-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    text-align: center;
+
+    margin: 0;
+    padding: 180px 8% 80px;
+
+    box-sizing: border-box;
+}
+
+
+.material-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,.55);
+
+    z-index: 1;
+}
+
+
+.material-hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 900px;
+}
+
+
+.material-label {
+    color: #67c56d;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+
+.material-hero h1 {
+    font-size: 64px;
+    line-height: 1.15;
+
+    margin: 0 0 25px;
+
+    color: white;
+}
+
+
+.material-hero p:not(.material-label) {
+    color: #eee;
+
+    font-size: 20px;
+    line-height: 1.7;
+
+    max-width: 750px;
+
+    margin: 0 auto 30px;
+}
+
+
+/* ---------- Material Hero Mobile ---------- */
+
+@media(max-width:900px) {
+
+    .material-hero {
+        min-height: 80vh;
+
+        padding: 120px 25px 80px;
+
+        background-position: center;
+    }
+
+    .material-hero h1 {
+        font-size: 42px;
+    }
+
+    .material-hero p:not(.material-label) {
+        font-size: 17px;
+    }
+
+}
+
+
+/* ---------- Material Installation ---------- */
+
+.material-installation {
+
+    padding:100px 8%;
+
+    text-align:center;
+
+    background:#0f0f0f;
+
+}
+
+
+.material-section-intro {
+
+    max-width:700px;
+
+    margin:-20px auto 50px;
+
+    color:#ccc;
+
+    font-size:18px;
+
+    line-height:1.7;
+
+}
+
+
+.material-installation-grid {
+
+    max-width:1100px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+
+.material-installation-card {
+
+    background:#181818;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    padding:35px 25px;
+
+    transition:.3s;
+
+}
+
+
+.material-installation-card:hover {
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+
+}
+
+
+.material-card-icon {
+
+    font-size:40px;
+
+    margin-bottom:15px;
+
+}
+
+
+.material-installation-card h3 {
+
+    color:#67c56d;
+
+    font-size:22px;
+
+    margin:10px 0 15px;
+
+}
+
+
+.material-installation-card p {
+
+    color:#ccc;
+
+    font-size:16px;
+
+    line-height:1.7;
+
+    margin:0;
+
+}
+
+
+/* ---------- Material Installation Mobile ---------- */
+
+@media(max-width:900px) {
+
+    .material-installation {
+
+        padding:80px 20px;
+
+    }
+
+    .material-installation-grid {
+
+        grid-template-columns:1fr;
+
+        max-width:500px;
+
+    }
+
+}
+
+
+/* ---------- Material Options ---------- */
+
+.material-options {
+
+    padding:100px 8%;
+
+    background:#111;
+
+}
+
+
+.material-category {
+
+    max-width:1100px;
+
+    margin:0 auto 90px;
+
+}
+
+
+.material-category:last-child {
+
+    margin-bottom:0;
+
+}
+
+
+.material-category-title {
+
+    color:white;
+
+    text-align:center;
+
+    font-size:34px;
+
+    margin:0 0 10px;
+
+}
+
+
+.material-category-intro {
+
+    max-width:700px;
+
+    margin:0 auto 40px;
+
+    color:#ccc;
+
+    font-size:17px;
+
+    line-height:1.7;
+
+    text-align:center;
+
+}
+
+
+.material-grid {
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+
+.material-card {
+
+    background:#181818;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    transition:.3s;
+
+}
+
+
+.material-card:hover {
+
+    transform:translateY(-7px);
+
+    border-color:rgba(103,197,109,.25);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.3);
+
+}
+
+
+.material-card img {
+
+    width:100%;
+
+    height:240px;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+
+.material-card-content {
+
+    padding:25px;
+
+}
+
+
+.material-card h4 {
+
+    color:#67c56d;
+
+    font-size:21px;
+
+    margin:0 0 10px;
+
+}
+
+
+.material-card p {
+
+    color:#ccc;
+
+    font-size:15px;
+
+    line-height:1.7;
+
+    margin:0;
+
+}
+
+
+/* ---------- Material Options Mobile ---------- */
+
+@media(max-width:900px) {
+
+    .material-options {
+
+        padding:80px 20px;
+
+    }
+
+    .material-grid {
+
+        grid-template-columns:1fr;
+
+        max-width:500px;
+
+        margin:auto;
+
+    }
+
+    .material-category {
+
+        margin-bottom:70px;
+
+    }
+
+    .material-category-title {
+
+        font-size:30px;
+
+    }
+
+    .material-card img {
+
+        height:auto;
+
+        max-height:300px;
+
+    }
+
+}
+
+
+/* ---------- Material Work ---------- */
+
+.material-work-grid {
+    max-width:1100px;
+    margin:0 auto 40px;
+
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+
+    gap:20px;
+}
+
+
+.material-work-grid img {
+    width:100%;
+    height:350px;
+
+    object-fit:cover;
+
+    border-radius:16px;
+
+    display:block;
+}
+
+
+/* ---------- Material Work Mobile ---------- */
+
+@media(max-width:900px) {
+
+    .material-work {
+        padding:80px 20px;
+    }
+
+    .material-work-grid {
+        grid-template-columns:1fr;
+        max-width:500px;
+        gap:20px;
+    }
+
+    .material-work-grid img {
+        height:auto;
+    }
+
+}
+
+/* ---------- Material CTA ---------- */
+
+.material-cta {
+
+    padding:100px 8%;
+
+    text-align:center;
+
+    background:#111;
+
+}
+
+
+.material-cta h2 {
+
+    color:white;
+
+    font-size:42px;
+
+    line-height:1.2;
+
+    margin:0 0 20px;
+
+}
+
+
+.material-cta p {
+
+    color:#ccc;
+
+    font-size:18px;
+
+    line-height:1.7;
+
+    max-width:650px;
+
+    margin:0 auto 30px;
+
+}
+
+
+/* ---------- Material CTA Mobile ---------- */
+
+@media(max-width:900px) {
+
+    .material-cta {
+
+        padding:80px 20px;
+
+    }
+
+    .material-cta h2 {
+
+        font-size:32px;
+
+    }
+
+}
+
+.material-disclaimer {
+    max-width: 700px;
+    margin: -30px auto 55px;
+
+    color: #ccc;
+
+    font-size: 14px;
+    line-height: 1.6;
+
+    text-align: center;
+}
+
+.material-gallery-btn {
+    display: block;
+    width: fit-content;
+    margin: 5px auto 0 !important;
+}
+
+ /* ---------- Sod Hero ---------- */
+
+.sod-hero {
+    position: relative;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url("images/sod-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    text-align: center;
+
+    margin: 0;
+    padding: 180px 8% 80px;
+
+    box-sizing: border-box;
+}
+
+
+.sod-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,.55);
+
+    z-index: 1;
+}
+
+
+.sod-hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 900px;
+}
+
+
+.sod-label {
+    color: #67c56d;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+
+.sod-hero h1 {
+    font-size: 64px;
+    line-height: 1.15;
+
+    margin: 0 0 25px;
+
+    color: white;
+}
+
+
+.sod-hero p:not(.sod-label) {
+    color: #eee;
+
+    font-size: 20px;
+    line-height: 1.7;
+
+    max-width: 750px;
+
+    margin: 0 auto 30px;
+}
+
+
+/* ---------- Sod Hero Mobile ---------- */
+
+@media(max-width:900px) {
+
+    .sod-hero {
+        min-height: 80vh;
+
+        padding: 120px 25px 80px;
+
+        background-position: center;
+    }
+
+    .sod-hero h1 {
+        font-size: 42px;
+    }
+
+    .sod-hero p:not(.sod-label) {
+        font-size: 17px;
+    }
+
+}
+
+
+/* ---------- Sod Installation ---------- */
+
+.sod-installation {
+
+    padding:100px 8%;
+
+    text-align:center;
+
+    background:#0f0f0f;
+
+}
+
+
+.sod-section-intro {
+
+    max-width:700px;
+
+    margin:-20px auto 50px;
+
+    color:#ccc;
+
+    font-size:18px;
+
+    line-height:1.7;
+
+}
+
+
+.sod-installation-grid {
+
+    max-width:1100px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+
+.sod-installation-card {
+
+    background:#181818;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    padding:35px 25px;
+
+    transition:.3s;
+
+}
+
+
+.sod-installation-card:hover {
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+
+}
+
+
+.sod-card-icon {
+
+    font-size:40px;
+
+    margin-bottom:15px;
+
+}
+
+
+.sod-installation-card h3 {
+
+    color:#67c56d;
+
+    font-size:22px;
+
+    margin:10px 0 15px;
+
+}
+
+
+.sod-installation-card p {
+
+    color:#ccc;
+
+    font-size:16px;
+
+    line-height:1.7;
+
+    margin:0;
+
+}
+
+
+/* ---------- Sod Installation Mobile ---------- */
+
+@media(max-width:900px) {
+
+    .sod-installation {
+
+        padding:80px 20px;
+
+    }
+
+    .sod-installation-grid {
+
+        grid-template-columns:1fr;
+
+        max-width:500px;
+
+    }
+
+}
+
+
+/* ---------- Sod Options ---------- */
+
+.sod-options {
+
+    padding:100px 8%;
+
+    background:#111;
+
+}
+
+
+.sod-disclaimer {
+
+    max-width:700px;
+
+    margin:-30px auto 70px;
+
+    color:#888;
+
+    font-size:14px;
+
+    line-height:1.6;
+
+    text-align:center;
+
+}
+
+
+.sod-category {
+
+    max-width:1100px;
+
+    margin:0 auto 70px;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:50px;
+
+    align-items:center;
+
+}
+
+
+.sod-category:last-child {
+
+    margin-bottom:0;
+
+}
+
+
+.sod-category-image img {
+
+    width:100%;
+
+    height:350px;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    display:block;
+
+}
+
+
+.sod-category-content {
+
+    padding:10px 0;
+
+}
+
+
+.sod-category-content h3 {
+
+    color:#67c56d;
+
+    font-size:32px;
+
+    margin:0 0 20px;
+
+}
+
+
+.sod-category-content p {
+
+    color:#ccc;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    margin:0 0 18px;
+
+}
+
+
+.sod-category-content p:last-child {
+
+    margin-bottom:0;
+
+}
+
+
+/* Alternate image/text layout */
+
+.sod-category-reverse .sod-category-image {
+
+    order:2;
+}
+
+
+.sod-category-reverse .sod-category-content {
+
+    order:1;
+}
+
+
+/* ---------- Sod Options Mobile ---------- */
+
+@media(max-width:900px) {
+
+    .sod-options {
+
+        padding:80px 20px;
+
+    }
+
+    .sod-category {
+
+        grid-template-columns:1fr;
+
+        gap:25px;
+
+        max-width:500px;
+
+        margin-bottom:60px;
+
+    }
+
+    .sod-category-reverse .sod-category-image {
+
+        order:1;
+
+    }
+
+    .sod-category-reverse .sod-category-content {
+
+        order:2;
+
+    }
+
+    .sod-category-image img {
+
+        height:auto;
+
+        max-height:350px;
+
+    }
+
+    .sod-category-content h3 {
+
+        font-size:28px;
+
+    }
+
+}
+
+
+.sod-work-grid {
+    max-width:900px;
+    margin:0 auto 40px;
+
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+
+    gap:30px;
+}
+
+.sod-work-grid img {
+    width:100%;
+    height:350px;
+
+    object-fit:cover;
+
+    border-radius:16px;
+
+    display:block;
+}
+
+
+/* ---------- Sod Work Mobile ---------- */
+
+@media(max-width:900px) {
+
+    .sod-work {
+        padding:80px 20px;
+    }
+
+    .sod-work-grid {
+        grid-template-columns:1fr;
+        max-width:500px;
+    }
+
+    .sod-work-grid img {
+        height:auto;
+    }
+
+}
+
+
+/* ---------- Sod CTA ---------- */
+
+.sod-cta {
+
+    padding:100px 8%;
+
+    text-align:center;
+
+    background:#111;
+
+}
+
+
+.sod-cta h2 {
+
+    color:white;
+
+    font-size:42px;
+
+    line-height:1.2;
+
+    margin:0 0 20px;
+
+}
+
+
+.sod-cta p {
+
+    color:#ccc;
+
+    font-size:18px;
+
+    line-height:1.7;
+
+    max-width:650px;
+
+    margin:0 auto 30px;
+
+}
+
+
+/* ---------- Sod CTA Mobile ---------- */
+
+@media(max-width:900px) {
+
+    .sod-cta {
+
+        padding:80px 20px;
+
+    }
+
+    .sod-cta h2 {
+
+        font-size:32px;
+
+    }
+
+}
+
+.sod-gallery-btn {
+    display: block;
+    width: fit-content;
+    margin: 5px auto 0 !important;
+}
+
+.material-more {
+    max-width:700px;
+    margin:80px auto 0;
+
+    padding:40px 30px;
+
+    text-align:center;
+
+    background:#181818;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+}
+
+
+.material-more h3 {
+    color:#67c56d;
+
+    font-size:26px;
+
+    margin:0 0 15px;
+}
+
+
+.material-more p {
+    color:#ccc;
+
+    font-size:16px;
+
+    line-height:1.7;
+
+    margin:0 auto 25px;
+
+    max-width:600px;
+}
+
+
+@media(max-width:900px) {
+
+    .material-more {
+        margin-top:60px;
+
+        padding:35px 20px;
+    }
+
+    .material-more h3 {
+        font-size:23px;
+    }
+
+}
+
+/* ---------- Brick & Paver Hero ---------- */
+
+.brick-hero {
+    position: relative;
+    min-height: 80vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url("images/brick-paver-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    text-align: center;
+
+    margin: 0;
+    padding: 180px 8% 80px;
+
+    box-sizing: border-box;
+}
+
+
+.brick-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,.55);
+
+    z-index: 1;
+}
+
+
+.brick-hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 850px;
+}
+
+
+.brick-label {
+    color: #67c56d;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+
+.brick-hero h1 {
+    font-size: 60px;
+    line-height: 1.15;
+
+    margin: 0 0 25px;
+
+    color: white;
+}
+
+
+.brick-hero p:not(.brick-label) {
+    color: #eee;
+
+    font-size: 20px;
+    line-height: 1.7;
+
+    max-width: 700px;
+
+    margin: 0 auto 30px;
+}
+
+
+/* ---------- Brick Services ---------- */
+
+.brick-services-grid {
+    max-width:1100px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+
+    gap:25px;
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:900px) {
+
+    .brick-services-grid {
+        grid-template-columns:1fr;
+        max-width:500px;
+    }
+
+}
+
+.brick-services {
+    padding: 100px 8%;
+
+    text-align: center;
+
+    background: #0f0f0f;
+}
+
+
+.brick-section-intro {
+    max-width: 700px;
+
+    margin: -20px auto 50px;
+
+    color: #ccc;
+
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+.brick-card {
+    background: #181818;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 18px;
+
+    padding: 35px 30px;
+
+    transition: .3s;
+}
+
+
+.brick-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 20px 40px rgba(0,0,0,.35);
+}
+
+
+.brick-card h3 {
+    color: #67c56d;
+
+    font-size: 22px;
+
+    margin: 0 0 15px;
+}
+
+
+.brick-card p {
+    color: #ccc;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+/* ---------- Brick Work ---------- */
+
+.brick-work-grid {
+    width:100%;
+    max-width:600px;
+    margin:0 auto 40px;
+
+    display:flex;
+    justify-content:center;
+}
+
+.brick-work-grid img {
+    width:100%;
+    max-width:450px;
+    height:auto;
+
+    border-radius:16px;
+
+    display:block;
+}
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:900px) {
+
+    .brick-work {
+        padding:80px 20px;
+    }
+
+    .brick-work-grid {
+        grid-template-columns:1fr;
+        max-width:500px;
+        gap:20px;
+    }
+
+}
+
+/* ---------- Brick CTA ---------- */
+
+.brick-cta {
+    padding: 100px 8%;
+
+    text-align: center;
+
+    background: #0f0f0f;
+}
+
+
+.brick-cta h2 {
+    color: white;
+
+    font-size: 42px;
+
+    line-height: 1.2;
+
+    margin: 0 0 20px;
+}
+
+
+.brick-cta p {
+    color: #ccc;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    max-width: 650px;
+
+    margin: 0 auto 30px;
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:900px) {
+
+    .brick-hero {
+        min-height: 80vh;
+
+        padding: 120px 25px 80px;
+    }
+
+
+    .brick-hero h1 {
+        font-size: 42px;
+    }
+
+
+    .brick-hero p:not(.brick-label) {
+        font-size: 17px;
+    }
+
+
+    .brick-work {
+        padding: 80px 20px;
+    }
+
+
+  .brick-work-grid {
+    max-width:600px;
+    margin:0 auto 40px;
+}
+
+.brick-work-grid img {
+    width:100%;
+    height:auto;
+
+    border-radius:16px;
+
+    display:block;
+}
+
+    .brick-cta {
+        padding: 80px 20px;
+    }
+
+
+    .brick-cta h2 {
+        font-size: 32px;
+    }
+
+}
+
+.brick-gallery-btn {
+    display: block;
+    width: fit-content;
+    margin: 5px auto 0 !important;
+}
+
+ /* ---------- Brick Materials ---------- */
+
+.brick-materials {
+    padding:100px 8%;
+
+    text-align:center;
+
+    background:#0f0f0f;
+}
+
+
+.brick-material-grid {
+    max-width:1100px;
+
+    margin:0 auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(3, 1fr);
+
+    gap:25px;
+}
+
+
+.brick-material-card {
+    background:#181818;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    transition:.3s;
+}
+
+
+.brick-material-card:hover {
+    transform:translateY(-7px);
+
+    border-color:rgba(103,197,109,.25);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.3);
+}
+
+
+.brick-material-card img {
+    width:100%;
+
+    height:240px;
+
+    object-fit:cover;
+
+    display:block;
+}
+
+
+.brick-material-content {
+    padding:25px;
+}
+
+
+.brick-material-content h3 {
+    color:#67c56d;
+
+    font-size:22px;
+
+    margin:0 0 12px;
+}
+
+
+.brick-material-content p {
+    color:#ccc;
+
+    font-size:15px;
+
+    line-height:1.7;
+
+    margin:0;
+}
+
+
+/* ---------- More Materials ---------- */
+
+.brick-more-materials {
+    max-width:700px;
+
+    margin:70px auto 0;
+
+    padding:40px 30px;
+
+    background:#181818;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    text-align:center;
+}
+
+
+.brick-more-materials h3 {
+    color:#67c56d;
+
+    font-size:26px;
+
+    margin:0 0 15px;
+}
+
+
+.brick-more-materials p {
+    color:#ccc;
+
+    font-size:16px;
+
+    line-height:1.7;
+
+    max-width:600px;
+
+    margin:0 auto 25px;
+}
+
+
+/* ---------- Brick Materials Mobile ---------- */
+
+@media(max-width:900px) {
+
+    .brick-materials {
+        padding:80px 20px;
+    }
+
+    .brick-material-grid {
+        grid-template-columns:1fr;
+
+        max-width:500px;
+    }
+
+    .brick-material-card img {
+        height:auto;
+
+        max-height:300px;
+    }
+
+    .brick-more-materials {
+        margin-top:60px;
+
+        padding:35px 20px;
+    }
+
+    .brick-more-materials h3 {
+        font-size:23px;
+    }
+
+}
+
+/* ---------- Flower Bed Hero ---------- */
+
+.flower-hero {
+    position: relative;
+    min-height: 80vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url("images/hero1.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    text-align: center;
+
+    margin: 0;
+    padding: 180px 8% 80px;
+
+    box-sizing: border-box;
+}
+
+.flower-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,.55);
+
+    z-index: 1;
+}
+
+.flower-hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 850px;
+}
+
+.flower-label {
+    color: #67c56d;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+.flower-hero h1 {
+    font-size: 60px;
+    line-height: 1.15;
+
+    margin: 0 0 25px;
+
+    color: white;
+}
+
+.flower-hero p:not(.flower-label) {
+    color: #eee;
+
+    font-size: 20px;
+    line-height: 1.7;
+
+    max-width: 700px;
+
+    margin: 0 auto 30px;
+}
+
+
+/* ---------- Flower Services ---------- */
+
+.flower-services {
+    padding: 100px 8%;
+
+    text-align: center;
+
+    background: #0f0f0f;
+}
+
+.flower-section-intro {
+    max-width: 700px;
+
+    margin: -20px auto 50px;
+
+    color: #ccc;
+
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.flower-services-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+.flower-card {
+    background: #181818;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 18px;
+
+    padding: 35px 25px;
+
+    transition: .3s;
+}
+
+.flower-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 20px 40px rgba(0,0,0,.35);
+}
+
+.flower-card h3 {
+    color: #67c56d;
+
+    font-size: 22px;
+
+    margin: 0 0 15px;
+}
+
+.flower-card p {
+    color: #ccc;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+/* ---------- Plant Options ---------- */
+
+.flower-options {
+    padding: 100px 8%;
+
+    text-align: center;
+
+    background: #111;
+}
+
+.flower-options-grid {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.flower-option-card {
+    background: #181818;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    transition: .3s;
+}
+
+.flower-option-card:hover {
+    transform: translateY(-7px);
+
+    border-color: rgba(103,197,109,.25);
+
+    box-shadow: 0 15px 35px rgba(0,0,0,.3);
+}
+
+.flower-option-card img {
+    width: 100%;
+
+    height: 250px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.flower-option-content {
+    padding: 25px;
+}
+
+.flower-option-content h3 {
+    color: #67c56d;
+
+    font-size: 22px;
+
+    margin: 0 0 12px;
+}
+
+.flower-option-content p {
+    color: #ccc;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+/* ---------- More Plant Options ---------- */
+
+.flower-more-options {
+    max-width: 700px;
+
+    margin: 70px auto 0;
+
+    padding: 40px 30px;
+
+    background: #181818;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 18px;
+
+    text-align: center;
+}
+
+.flower-more-options h3 {
+    color: #67c56d;
+
+    font-size: 26px;
+
+    margin: 0 0 15px;
+}
+
+.flower-more-options p {
+    color: #ccc;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    max-width: 600px;
+
+    margin: 0 auto 25px;
+}
+
+
+/* ---------- Flower Work ---------- */
+
+.flower-work {
+    padding: 100px 8%;
+
+    text-align: center;
+
+    background: #0f0f0f;
+}
+
+/* ---------- Flower Work ---------- */
+
+.flower-work-grid {
+    max-width:1200px;
+
+    margin:0 auto 40px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4, 1fr);
+
+    gap:20px;
+}
+
+.flower-work-grid img {
+    width:100%;
+
+    height:300px;
+
+    object-fit:cover;
+
+    border-radius:16px;
+
+    display:block;
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:900px) {
+
+    .flower-work-grid {
+        grid-template-columns:1fr;
+
+        max-width:500px;
+
+        gap:20px;
+    }
+
+    .flower-work-grid img {
+        height:auto;
+    }
+
+}
+
+
+.flower-gallery-btn {
+    display: block;
+
+    width: fit-content;
+
+    margin: 5px auto 0 !important;
+}
+
+
+/* ---------- Flower CTA ---------- */
+
+.flower-cta {
+    padding: 100px 8%;
+
+    text-align: center;
+
+    background: #111;
+}
+
+.flower-cta h2 {
+    color: white;
+
+    font-size: 42px;
+
+    line-height: 1.2;
+
+    margin: 0 0 20px;
+}
+
+.flower-cta p {
+    color: #ccc;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    max-width: 650px;
+
+    margin: 0 auto 30px;
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:900px) {
+
+    .flower-hero {
+        min-height: 80vh;
+
+        padding: 120px 25px 80px;
+    }
+
+    .flower-hero h1 {
+        font-size: 42px;
+    }
+
+    .flower-hero p:not(.flower-label) {
+        font-size: 17px;
+    }
+
+
+    .flower-services {
+        padding: 80px 20px;
+    }
+
+    .flower-services-grid {
+        grid-template-columns: 1fr;
+
+        max-width: 500px;
+    }
+
+
+    .flower-options {
+        padding: 80px 20px;
+    }
+
+    .flower-options-grid {
+        grid-template-columns: 1fr;
+
+        max-width: 500px;
+    }
+
+    .flower-option-card img {
+        height: auto;
+
+        max-height: 300px;
+    }
+
+
+    .flower-more-options {
+        margin-top: 60px;
+
+        padding: 35px 20px;
+    }
+
+    .flower-more-options h3 {
+        font-size: 23px;
+    }
+
+
+    .flower-work {
+        padding: 80px 20px;
+    }
+
+    .flower-work-grid {
+        grid-template-columns: 1fr;
+
+        max-width: 500px;
+    }
+
+    .flower-work-grid img {
+        height: auto;
+    }
+
+
+    .flower-cta {
+        padding: 80px 20px;
+    }
+
+    .flower-cta h2 {
+        font-size: 32px;
+    }
+
+}
+
