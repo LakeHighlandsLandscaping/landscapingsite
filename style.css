@@ -1414,8 +1414,12 @@ nav a{
 @media(max-width:900px){
 
 .contact-grid a{
-    white-space:nowrap;
+    white-space:normal;
+    overflow-wrap:anywhere;
+    word-break:break-word;
     font-size:14px;
+}
+
 }
 
 }
