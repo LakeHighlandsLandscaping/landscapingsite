@@ -39,7 +39,6 @@ content.style.maxHeight=content.scrollHeight+"px";
 });
 
 
-
 // Fade In Animation
 
 const observer=new IntersectionObserver(entries=>{

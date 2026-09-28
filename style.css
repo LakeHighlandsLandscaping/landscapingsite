@@ -143,7 +143,7 @@ transform:translateY(-2px);
 
 .hero{
 
-height:90vh;
+height: 67vh;
 
 display:flex;
 
@@ -203,13 +203,13 @@ font-weight:400;
 
 .hero h1{
 
-font-size:72px;
+font-size:64px;
 
 line-height:1.1;
 
 margin-bottom:20px;
 
-max-width:700px;
+max-width: none;
 
 }
 
@@ -217,7 +217,7 @@ max-width:700px;
 
 .hero p{
 
-max-width:700px;
+max-width:900px;
 
 margin-left:auto;
 
@@ -699,7 +699,7 @@ color:var(--brand-green);
 
 font-weight:500;
 
-animation:float 2s infinite;
+animation:float .75s infinite;
 
 }
 
@@ -934,6 +934,14 @@ text-align:center;
 
 }
 
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
 
 .contact-grid div{
 
@@ -959,15 +967,10 @@ box-shadow:0 20px 40px rgba(0,0,0,.35);
 }
 
 
-
-.contact-grid p{
-
-color:#ddd;
-
-overflow-wrap:break-word;
-
-word-break:break-word;
-
+.contact-grid p {
+    color: #ddd;
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 
@@ -1082,24 +1085,10 @@ border-radius:999px;
 
 /* ---------- Scroll Animations ---------- */
 
-.fade-in{
 
-opacity:0;
-
-transform:translateY(40px);
-
-transition:
-opacity .8s ease,
-transform .8s ease;
-
-}
-
-.fade-in.show{
-
-opacity:1;
-
-transform:translateY(0);
-
+.fade-in {
+    opacity: 1;
+    transform: none;
 }
 
 
@@ -2967,17 +2956,20 @@ html {
 
 
 .sod-work-grid {
-    max-width:900px;
+    max-width:1100px;
+
     margin:0 auto 40px;
 
     display:grid;
-    grid-template-columns:repeat(2, 1fr);
 
-    gap:30px;
+    grid-template-columns:repeat(3, 1fr);
+
+    gap:25px;
 }
 
 .sod-work-grid img {
     width:100%;
+
     height:350px;
 
     object-fit:cover;
@@ -2988,17 +2980,16 @@ html {
 }
 
 
-/* ---------- Sod Work Mobile ---------- */
+/* ---------- Mobile ---------- */
 
 @media(max-width:900px) {
 
-    .sod-work {
-        padding:80px 20px;
-    }
-
     .sod-work-grid {
         grid-template-columns:1fr;
+
         max-width:500px;
+
+        gap:20px;
     }
 
     .sod-work-grid img {
@@ -4006,3 +3997,1475 @@ html {
 
 }
 
+/* ---------- Pressure Washing Hero ---------- */
+
+.pressure-hero {
+    position: relative;
+    min-height: 80vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url("images/pressure-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    text-align: center;
+
+    margin: 0;
+    padding: 180px 8% 80px;
+
+    box-sizing: border-box;
+}
+
+
+.pressure-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,.55);
+
+    z-index: 1;
+}
+
+
+.pressure-hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 850px;
+}
+
+
+.pressure-label {
+    color: #67c56d;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+
+.pressure-hero h1 {
+    font-size: 60px;
+    line-height: 1.15;
+
+    margin: 0 0 25px;
+
+    color: white;
+}
+
+
+.pressure-hero p:not(.pressure-label) {
+    color: #eee;
+
+    font-size: 20px;
+    line-height: 1.7;
+
+    max-width: 700px;
+
+    margin: 0 auto 30px;
+}
+
+
+/* ---------- Pressure Washing Services ---------- */
+
+.pressure-services {
+    padding: 100px 8%;
+
+    text-align: center;
+
+    background: #0f0f0f;
+}
+
+
+.pressure-section-intro {
+    max-width: 700px;
+
+    margin: -20px auto 50px;
+
+    color: #ccc;
+
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+.pressure-services-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+.pressure-card {
+    background: #181818;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 18px;
+
+    padding: 35px 25px;
+
+    transition: .3s;
+}
+
+
+.pressure-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 20px 40px rgba(0,0,0,.35);
+}
+
+
+.pressure-card h3 {
+    color: #67c56d;
+
+    font-size: 22px;
+
+    margin: 0 0 15px;
+}
+
+
+.pressure-card p {
+    color: #ccc;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+/* ---------- Pressure Washing Process ---------- */
+
+.pressure-process {
+    padding: 100px 8%;
+
+    text-align: center;
+
+    background: #111;
+}
+
+
+.pressure-process-grid {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.pressure-process-card {
+    background: #181818;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 18px;
+
+    padding: 35px 25px;
+}
+
+
+.pressure-process-card span {
+    display: block;
+
+    color: #67c56d;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 10px;
+}
+
+
+.pressure-process-card h3 {
+    color: white;
+
+    font-size: 24px;
+
+    margin: 0 0 15px;
+}
+
+
+.pressure-process-card p {
+    color: #ccc;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+/* ---------- Pressure Washing CTA ---------- */
+
+.pressure-cta {
+    padding: 100px 8%;
+
+    text-align: center;
+
+    background: #111;
+}
+
+
+.pressure-cta h2 {
+    color: white;
+
+    font-size: 42px;
+
+    line-height: 1.2;
+
+    margin: 0 0 20px;
+}
+
+
+.pressure-cta p {
+    color: #ccc;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    max-width: 650px;
+
+    margin: 0 auto 30px;
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:900px) {
+
+    .pressure-hero {
+        min-height: 80vh;
+
+        padding: 120px 25px 80px;
+    }
+
+
+    .pressure-hero h1 {
+        font-size: 42px;
+    }
+
+
+    .pressure-hero p:not(.pressure-label) {
+        font-size: 17px;
+    }
+
+
+    .pressure-services {
+        padding: 80px 20px;
+    }
+
+
+    .pressure-services-grid {
+        grid-template-columns: 1fr;
+
+        max-width: 500px;
+    }
+
+
+    .pressure-process {
+        padding: 80px 20px;
+    }
+
+
+    .pressure-process-grid {
+        grid-template-columns: 1fr;
+
+        max-width: 500px;
+    }
+
+
+    .pressure-work {
+        padding: 80px 20px;
+    }
+
+
+    .pressure-work-grid {
+        grid-template-columns: 1fr;
+
+        max-width: 500px;
+    }
+
+
+    .pressure-work-grid img {
+        height: auto;
+    }
+
+
+    .pressure-cta {
+        padding: 80px 20px;
+    }
+
+
+    .pressure-cta h2 {
+        font-size: 32px;
+    }
+
+}
+
+//* ---------- Pressure Washing Surface Types ---------- */
+
+.pressure-surfaces {
+    padding:100px 8%;
+
+    text-align:center;
+
+    background:#0f0f0f;
+}
+
+
+.pressure-surfaces-grid {
+    max-width:1100px;
+
+    margin:0 auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(3, 1fr);
+
+    gap:25px;
+}
+
+
+.pressure-surface-card {
+    background:#181818;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    transition:.3s;
+}
+
+
+.pressure-surface-card:hover {
+    transform:translateY(-6px);
+
+    border-color:rgba(103,197,109,.25);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.3);
+}
+
+
+.pressure-surface-card img {
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    display:block;
+}
+
+
+.pressure-surface-content {
+    padding:25px;
+}
+
+
+.pressure-surface-content h3 {
+    color:#67c56d;
+
+    font-size:21px;
+
+    margin:0 0 12px;
+}
+
+
+.pressure-surface-content p {
+    color:#ccc;
+
+    font-size:15px;
+
+    line-height:1.7;
+
+    margin:0;
+}
+
+
+/* ---------- Surface Note ---------- */
+
+.pressure-surface-note {
+    max-width:700px;
+
+    margin:60px auto 0;
+
+    padding:35px 30px;
+
+    background:#181818;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+}
+
+
+.pressure-surface-note h3 {
+    color:#67c56d;
+
+    font-size:23px;
+
+    margin:0 0 12px;
+}
+
+
+.pressure-surface-note p {
+    color:#ccc;
+
+    font-size:16px;
+
+    line-height:1.7;
+
+    margin:0;
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:900px) {
+
+    .pressure-surfaces {
+        padding:80px 20px;
+    }
+
+    .pressure-surfaces-grid {
+        grid-template-columns:1fr;
+
+        max-width:500px;
+    }
+
+    .pressure-surface-card img {
+        height:auto;
+
+        max-height:300px;
+    }
+
+    .pressure-surface-note {
+        margin-top:50px;
+
+        padding:30px 20px;
+    }
+
+}
+
+/* ---------- Yard Cleanup Hero ---------- */
+
+.cleanup-hero {
+    position: relative;
+    min-height: 80vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url("images/cleanup-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    text-align: center;
+
+    margin: 0;
+    padding: 180px 8% 80px;
+
+    box-sizing: border-box;
+}
+
+
+.cleanup-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,.55);
+
+    z-index: 1;
+}
+
+
+.cleanup-hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 850px;
+}
+
+
+.cleanup-label {
+    color: #67c56d;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+
+.cleanup-hero h1 {
+    font-size: 60px;
+    line-height: 1.15;
+
+    margin: 0 0 25px;
+
+    color: white;
+}
+
+
+.cleanup-hero p:not(.cleanup-label) {
+    color: #eee;
+
+    font-size: 20px;
+    line-height: 1.7;
+
+    max-width: 700px;
+
+    margin: 0 auto 30px;
+}
+
+
+/* ---------- Yard Cleanup Services ---------- */
+
+.cleanup-services {
+    padding: 100px 8%;
+
+    text-align: center;
+
+    background: #0f0f0f;
+}
+
+
+.cleanup-section-intro {
+    max-width: 700px;
+
+    margin: -20px auto 50px;
+
+    color: #ccc;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+.cleanup-services-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+.cleanup-card {
+    background: #181818;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 18px;
+
+    padding: 35px 25px;
+
+    transition: .3s;
+}
+
+
+.cleanup-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 20px 40px rgba(0,0,0,.35);
+}
+
+
+.cleanup-card h3 {
+    color: #67c56d;
+
+    font-size: 22px;
+
+    margin: 0 0 15px;
+}
+
+
+.cleanup-card p {
+    color: #ccc;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+/* ---------- What's Included ---------- */
+
+.cleanup-included {
+    padding: 100px 8%;
+
+    text-align: center;
+
+    background: #111;
+}
+
+
+.cleanup-included-grid {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.cleanup-included-card {
+    background: #181818;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 18px;
+
+    padding: 35px 25px;
+}
+
+
+.cleanup-included-card span {
+    display: block;
+
+    color: #67c56d;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 10px;
+}
+
+
+.cleanup-included-card h3 {
+    color: white;
+
+    font-size: 24px;
+
+    margin: 0 0 15px;
+}
+
+
+.cleanup-included-card p {
+    color: #ccc;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+/* ---------- Yard Cleanup Work ---------- */
+
+.cleanup-work {
+    padding: 100px 8%;
+
+    text-align: center;
+
+    background: #0f0f0f;
+}
+
+
+.cleanup-work-grid {
+    max-width: 900px;
+
+    margin: 0 auto 40px;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+
+.cleanup-work-grid img {
+    width: 100%;
+
+    height: 350px;
+
+    object-fit: cover;
+
+    border-radius: 16px;
+
+    display: block;
+}
+
+
+.cleanup-gallery-btn {
+    display: block;
+
+    width: fit-content;
+
+    margin: 5px auto 0 !important;
+}
+
+
+/* ---------- Yard Cleanup Service Areas ---------- */
+
+.cleanup-areas {
+    padding: 100px 8%;
+
+    text-align: center;
+
+    background: #111;
+}
+
+
+.cleanup-area-list {
+    max-width: 900px;
+
+    margin: 40px auto 0;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+
+.cleanup-area-list span {
+    background: #181818;
+
+    border: 1px solid rgba(103,197,109,.3);
+
+    border-radius: 999px;
+
+    padding: 12px 22px;
+
+    color: #67c56d;
+
+    font-size: 16px;
+}
+
+
+/* ---------- Yard Cleanup CTA ---------- */
+
+.cleanup-cta {
+    padding: 100px 8%;
+
+    text-align: center;
+
+    background: #0f0f0f;
+}
+
+
+.cleanup-cta h2 {
+    color: white;
+
+    font-size: 42px;
+
+    line-height: 1.2;
+
+    margin: 0 0 20px;
+}
+
+
+.cleanup-cta p {
+    color: #ccc;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    max-width: 650px;
+
+    margin: 0 auto 30px;
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:900px) {
+
+    .cleanup-hero {
+        min-height: 80vh;
+
+        padding: 120px 25px 80px;
+    }
+
+
+    .cleanup-hero h1 {
+        font-size: 42px;
+    }
+
+
+    .cleanup-hero p:not(.cleanup-label) {
+        font-size: 17px;
+    }
+
+
+    .cleanup-services {
+        padding: 80px 20px;
+    }
+
+
+    .cleanup-services-grid {
+        grid-template-columns: 1fr;
+
+        max-width: 500px;
+    }
+
+
+    .cleanup-included {
+        padding: 80px 20px;
+    }
+
+
+    .cleanup-included-grid {
+        grid-template-columns: 1fr;
+
+        max-width: 500px;
+    }
+
+
+    .cleanup-work {
+        padding: 80px 20px;
+    }
+
+
+    .cleanup-work-grid {
+        grid-template-columns: 1fr;
+
+        max-width: 500px;
+    }
+
+
+    .cleanup-work-grid img {
+        height: auto;
+    }
+
+
+    .cleanup-areas {
+        padding: 80px 20px;
+    }
+
+
+    .cleanup-cta {
+        padding: 80px 20px;
+    }
+
+
+    .cleanup-cta h2 {
+        font-size: 32px;
+    }
+
+}
+
+/* ---------- Service Areas ---------- */
+
+.service-areas {
+    padding: 100px 8%;
+
+    text-align: center;
+
+    background: #111;
+}
+
+
+.service-area-intro {
+    max-width: 700px;
+
+    margin: -20px auto 40px;
+
+    color: #ccc;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+.service-area-list {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+
+.service-area-list span {
+    background: #181818;
+
+    border: 1px solid rgba(103,197,109,.3);
+
+    border-radius: 999px;
+
+    padding: 12px 22px;
+
+    color: #67c56d;
+
+    font-size: 16px;
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:900px) {
+
+    .service-areas {
+        padding: 80px 20px;
+    }
+
+    .service-area-list {
+        max-width: 500px;
+
+        gap: 12px;
+    }
+
+    .service-area-list span {
+        padding: 10px 17px;
+
+        font-size: 15px;
+    }
+
+}
+
+/* ---------- Service Areas ---------- */
+
+.service-areas {
+    padding: 100px 8%;
+    text-align: center;
+    background: #111;
+}
+
+.service-area-intro {
+    max-width: 700px;
+    margin: -20px auto 40px;
+    color: #ccc;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+
+.service-area-list {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 15px;
+}
+
+.service-area-list span {
+    background: #181818;
+    border: 1px solid rgba(103,197,109,.3);
+    border-radius: 999px;
+
+    padding: 12px 22px;
+
+    color: #67c56d;
+    font-size: 16px;
+}
+
+
+@media(max-width:900px) {
+
+    .service-areas {
+        padding: 80px 20px;
+    }
+
+    .service-area-list {
+        max-width: 500px;
+        gap: 12px;
+    }
+
+    .service-area-list span {
+        padding: 10px 17px;
+        font-size: 15px;
+    }
+
+}
+
+/* ---------- Exterior Services Hero ---------- */
+
+.exterior-hero {
+    position: relative;
+
+    min-height: 80vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url("images/exterior-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    text-align: center;
+
+    padding: 180px 8% 80px;
+
+    box-sizing: border-box;
+}
+
+
+.exterior-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,.55);
+
+    z-index: 1;
+}
+
+
+.exterior-hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 850px;
+}
+
+
+.exterior-label {
+    color: #67c56d;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+
+.exterior-hero h1 {
+    color: white;
+
+    font-size: 58px;
+
+    line-height: 1.15;
+
+    margin: 0 0 25px;
+}
+
+
+.exterior-hero p:not(.exterior-label) {
+    color: #eee;
+
+    font-size: 20px;
+
+    line-height: 1.7;
+
+    max-width: 700px;
+
+    margin: 0 auto 30px;
+}
+
+
+/* ---------- Exterior Services ---------- */
+
+.exterior-services {
+    padding: 100px 8%;
+
+    text-align: center;
+
+    background: #0f0f0f;
+}
+
+
+.exterior-section-intro {
+    max-width: 700px;
+
+    margin: -20px auto 50px;
+
+    color: #ccc;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+.exterior-services-grid {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.exterior-service-card {
+    overflow: hidden;
+
+    background: #181818;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 18px;
+
+    transition: .3s;
+}
+
+
+.exterior-service-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 20px 40px rgba(0,0,0,.35);
+}
+
+
+.exterior-service-card img {
+    width: 100%;
+
+    height: 240px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.exterior-service-content {
+    padding: 28px 25px 32px;
+}
+
+
+.exterior-service-label {
+    color: #67c56d;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+    margin: 0 0 8px;
+}
+
+
+.exterior-service-content h3 {
+    color: white;
+
+    font-size: 24px;
+
+    margin: 0 0 15px;
+}
+
+
+.exterior-service-content p:last-child {
+    color: #ccc;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+/* ---------- Service Details ---------- */
+
+.exterior-detail {
+    padding: 100px 8%;
+}
+
+
+.exterior-detail-dark {
+    background: #111;
+}
+
+
+.exterior-detail-light {
+    background: #0f0f0f;
+}
+
+
+.exterior-detail-content {
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+.exterior-detail-content .exterior-service-label {
+    margin-bottom: 10px;
+}
+
+
+.exterior-detail-content h2 {
+    color: white;
+
+    font-size: 42px;
+
+    line-height: 1.2;
+
+    margin: 0 0 20px;
+}
+
+
+.exterior-detail-content > p:not(.exterior-service-label) {
+    color: #ccc;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin: 0 auto 25px;
+}
+
+
+.exterior-detail-content ul {
+    max-width: 500px;
+
+    margin: 0 auto;
+
+    padding: 0;
+
+    list-style: none;
+}
+
+
+.exterior-detail-content li {
+    color: #ccc;
+
+    font-size: 16px;
+
+    margin: 10px 0;
+}
+
+
+.exterior-detail-content li::before {
+    content: "✓";
+
+    color: #67c56d;
+
+    margin-right: 10px;
+
+    font-weight: 600;
+}
+
+
+/* ---------- Exterior Work ---------- */
+
+.exterior-work {
+    padding: 100px 8%;
+
+    text-align: center;
+
+    background: #0f0f0f;
+}
+
+
+.exterior-work-grid {
+    max-width: 1100px;
+
+    margin: 0 auto 40px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.exterior-work-grid img {
+    width: 100%;
+
+    height: 320px;
+
+    object-fit: cover;
+
+    border-radius: 16px;
+
+    display: block;
+}
+
+
+.exterior-gallery-btn {
+    display: block;
+
+    width: fit-content;
+
+    margin: 5px auto 0 !important;
+}
+
+
+/* ---------- Exterior CTA ---------- */
+
+.exterior-cta {
+    padding: 100px 8%;
+
+    text-align: center;
+
+    background: #111;
+}
+
+
+.exterior-cta h2 {
+    color: white;
+
+    font-size: 42px;
+
+    line-height: 1.2;
+
+    margin: 0 0 20px;
+}
+
+
+.exterior-cta p {
+    color: #ccc;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    max-width: 650px;
+
+    margin: 0 auto 30px;
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:900px) {
+
+    .exterior-hero {
+        min-height: 80vh;
+
+        padding: 120px 25px 80px;
+    }
+
+
+    .exterior-hero h1 {
+        font-size: 42px;
+    }
+
+
+    .exterior-hero p:not(.exterior-label) {
+        font-size: 17px;
+    }
+
+
+    .exterior-services {
+        padding: 80px 20px;
+    }
+
+
+    .exterior-services-grid {
+        grid-template-columns: 1fr;
+
+        max-width: 500px;
+    }
+
+
+    .exterior-detail {
+        padding: 80px 20px;
+    }
+
+
+    .exterior-detail-content h2 {
+        font-size: 32px;
+    }
+
+
+    .exterior-work {
+        padding: 80px 20px;
+    }
+
+
+    .exterior-work-grid {
+        grid-template-columns: 1fr;
+
+        max-width: 500px;
+    }
+
+
+    .exterior-work-grid img {
+        height: auto;
+    }
+
+
+    .exterior-cta {
+        padding: 80px 20px;
+    }
+
+
+    .exterior-cta h2 {
+        font-size: 32px;
+    }
+
+}
+
+.scroll {
+    display: block;
+    width: fit-content;
+    margin: 25px auto 0;
+    color: #67c56d;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+.contact-grid a[href^="mailto:"] {
+    white-space: nowrap;
+    font-size: 15px;
+}
