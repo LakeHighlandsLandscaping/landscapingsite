@@ -5506,6 +5506,7 @@ html {
 
 }
 
+
 /* ---------- Service Image Cards ---------- */
 
 .services-grid {
@@ -5542,11 +5543,12 @@ html {
     left: 0;
     width: 100%;
     box-sizing: border-box;
-    padding: 16px 10px;
-    background: rgba(0,0,0,.65);
+    padding: 12px 8px;
+    background: rgba(0,0,0,.7);
     color: white;
     text-align: center;
-    font-size: 17px;
+    font-size: 16px;
+    line-height: 1.25;
     font-weight: 600;
 }
 
@@ -5555,27 +5557,45 @@ html {
 }
 
 
-/* ---------- Mobile ---------- */
+/* ---------- Tablet / Mobile ---------- */
 
 @media (max-width: 900px) {
 
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
+        gap: 12px;
     }
 
     .services-grid .service-card {
-        height: 200px;
+        height: 150px;
+        border-radius: 12px;
+    }
+
+    .services-grid .service-card span {
+        font-size: 13px;
+        padding: 9px 5px;
+        line-height: 1.2;
     }
 
 }
 
+
+/* ---------- Small Phones ---------- */
 
 @media (max-width: 550px) {
 
     .services-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .services-grid .service-card {
+        height: 135px;
+    }
+
+    .services-grid .service-card span {
+        font-size: 12px;
+        padding: 8px 4px;
     }
 
 }
-
