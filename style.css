@@ -5506,3 +5506,76 @@ html {
 
 }
 
+/* ---------- Service Image Cards ---------- */
+
+.services-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.services-grid .service-card {
+    position: relative;
+    height: 220px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 15px;
+    text-decoration: none;
+    background: #181818;
+    box-shadow: none;
+}
+
+.services-grid .service-card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform .3s ease;
+}
+
+.services-grid .service-card span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px 10px;
+    background: rgba(0,0,0,.65);
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.services-grid .service-card:hover img {
+    transform: scale(1.06);
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 900px) {
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .services-grid .service-card {
+        height: 200px;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
